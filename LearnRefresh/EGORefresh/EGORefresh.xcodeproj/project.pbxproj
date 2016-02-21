@@ -1,0 +1,501 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28605AB61B2EFDEC0046DDFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28605AB51B2EFDEC0046DDFA /* main.m */; };
+		28605AB91B2EFDEC0046DDFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28605AB81B2EFDEC0046DDFA /* AppDelegate.m */; };
+		28605ABC1B2EFDEC0046DDFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28605ABB1B2EFDEC0046DDFA /* ViewController.m */; };
+		28605ABF1B2EFDEC0046DDFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28605ABD1B2EFDEC0046DDFA /* Main.storyboard */; };
+		28605AC11B2EFDEC0046DDFA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28605AC01B2EFDEC0046DDFA /* Images.xcassets */; };
+		28605AC41B2EFDEC0046DDFA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28605AC21B2EFDEC0046DDFA /* LaunchScreen.xib */; };
+		28605AD01B2EFDEC0046DDFA /* EGORefreshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28605ACF1B2EFDEC0046DDFA /* EGORefreshTests.m */; };
+		28605AE71B2EFE020046DDFA /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28605ADD1B2EFE020046DDFA /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		28605AE81B2EFE020046DDFA /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 28605ADF1B2EFE020046DDFA /* blackArrow.png */; };
+		28605AE91B2EFE020046DDFA /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28605AE01B2EFE020046DDFA /* blackArrow@2x.png */; };
+		28605AEA1B2EFE020046DDFA /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 28605AE11B2EFE020046DDFA /* blueArrow.png */; };
+		28605AEB1B2EFE020046DDFA /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28605AE21B2EFE020046DDFA /* blueArrow@2x.png */; };
+		28605AEC1B2EFE020046DDFA /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 28605AE31B2EFE020046DDFA /* grayArrow.png */; };
+		28605AED1B2EFE020046DDFA /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28605AE41B2EFE020046DDFA /* grayArrow@2x.png */; };
+		28605AEE1B2EFE020046DDFA /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 28605AE51B2EFE020046DDFA /* whiteArrow.png */; };
+		28605AEF1B2EFE020046DDFA /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28605AE61B2EFE020046DDFA /* whiteArrow@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28605ACA1B2EFDEC0046DDFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28605AA81B2EFDEC0046DDFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28605AAF1B2EFDEC0046DDFA;
+			remoteInfo = EGORefresh;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28605AB01B2EFDEC0046DDFA /* EGORefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EGORefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28605AB41B2EFDEC0046DDFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28605AB51B2EFDEC0046DDFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28605AB71B2EFDEC0046DDFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		28605AB81B2EFDEC0046DDFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		28605ABA1B2EFDEC0046DDFA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		28605ABB1B2EFDEC0046DDFA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		28605ABE1B2EFDEC0046DDFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28605AC01B2EFDEC0046DDFA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		28605AC31B2EFDEC0046DDFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		28605AC91B2EFDEC0046DDFA /* EGORefreshTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EGORefreshTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28605ACE1B2EFDEC0046DDFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28605ACF1B2EFDEC0046DDFA /* EGORefreshTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTests.m; sourceTree = "<group>"; };
+		28605ADC1B2EFE020046DDFA /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		28605ADD1B2EFE020046DDFA /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		28605ADF1B2EFE020046DDFA /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
+		28605AE01B2EFE020046DDFA /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
+		28605AE11B2EFE020046DDFA /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		28605AE21B2EFE020046DDFA /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
+		28605AE31B2EFE020046DDFA /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
+		28605AE41B2EFE020046DDFA /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
+		28605AE51B2EFE020046DDFA /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
+		28605AE61B2EFE020046DDFA /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28605AAD1B2EFDEC0046DDFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28605AC61B2EFDEC0046DDFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28605AA71B2EFDEC0046DDFA = {
+			isa = PBXGroup;
+			children = (
+				28605AB21B2EFDEC0046DDFA /* EGORefresh */,
+				28605ACC1B2EFDEC0046DDFA /* EGORefreshTests */,
+				28605AB11B2EFDEC0046DDFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28605AB11B2EFDEC0046DDFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28605AB01B2EFDEC0046DDFA /* EGORefresh.app */,
+				28605AC91B2EFDEC0046DDFA /* EGORefreshTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28605AB21B2EFDEC0046DDFA /* EGORefresh */ = {
+			isa = PBXGroup;
+			children = (
+				28605AD91B2EFE020046DDFA /* EGOTableViewPullRefresh */,
+				28605AB71B2EFDEC0046DDFA /* AppDelegate.h */,
+				28605AB81B2EFDEC0046DDFA /* AppDelegate.m */,
+				28605ABA1B2EFDEC0046DDFA /* ViewController.h */,
+				28605ABB1B2EFDEC0046DDFA /* ViewController.m */,
+				28605ABD1B2EFDEC0046DDFA /* Main.storyboard */,
+				28605AC01B2EFDEC0046DDFA /* Images.xcassets */,
+				28605AC21B2EFDEC0046DDFA /* LaunchScreen.xib */,
+				28605AB31B2EFDEC0046DDFA /* Supporting Files */,
+			);
+			path = EGORefresh;
+			sourceTree = "<group>";
+		};
+		28605AB31B2EFDEC0046DDFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28605AB41B2EFDEC0046DDFA /* Info.plist */,
+				28605AB51B2EFDEC0046DDFA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28605ACC1B2EFDEC0046DDFA /* EGORefreshTests */ = {
+			isa = PBXGroup;
+			children = (
+				28605ACF1B2EFDEC0046DDFA /* EGORefreshTests.m */,
+				28605ACD1B2EFDEC0046DDFA /* Supporting Files */,
+			);
+			path = EGORefreshTests;
+			sourceTree = "<group>";
+		};
+		28605ACD1B2EFDEC0046DDFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				28605ACE1B2EFDEC0046DDFA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28605AD91B2EFE020046DDFA /* EGOTableViewPullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				28605ADA1B2EFE020046DDFA /* Classes */,
+				28605ADE1B2EFE020046DDFA /* Resources */,
+			);
+			path = EGOTableViewPullRefresh;
+			sourceTree = "<group>";
+		};
+		28605ADA1B2EFE020046DDFA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				28605ADB1B2EFE020046DDFA /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		28605ADB1B2EFE020046DDFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				28605ADC1B2EFE020046DDFA /* EGORefreshTableHeaderView.h */,
+				28605ADD1B2EFE020046DDFA /* EGORefreshTableHeaderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		28605ADE1B2EFE020046DDFA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28605ADF1B2EFE020046DDFA /* blackArrow.png */,
+				28605AE01B2EFE020046DDFA /* blackArrow@2x.png */,
+				28605AE11B2EFE020046DDFA /* blueArrow.png */,
+				28605AE21B2EFE020046DDFA /* blueArrow@2x.png */,
+				28605AE31B2EFE020046DDFA /* grayArrow.png */,
+				28605AE41B2EFE020046DDFA /* grayArrow@2x.png */,
+				28605AE51B2EFE020046DDFA /* whiteArrow.png */,
+				28605AE61B2EFE020046DDFA /* whiteArrow@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28605AAF1B2EFDEC0046DDFA /* EGORefresh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28605AD31B2EFDEC0046DDFA /* Build configuration list for PBXNativeTarget "EGORefresh" */;
+			buildPhases = (
+				28605AAC1B2EFDEC0046DDFA /* Sources */,
+				28605AAD1B2EFDEC0046DDFA /* Frameworks */,
+				28605AAE1B2EFDEC0046DDFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EGORefresh;
+			productName = EGORefresh;
+			productReference = 28605AB01B2EFDEC0046DDFA /* EGORefresh.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28605AC81B2EFDEC0046DDFA /* EGORefreshTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28605AD61B2EFDEC0046DDFA /* Build configuration list for PBXNativeTarget "EGORefreshTests" */;
+			buildPhases = (
+				28605AC51B2EFDEC0046DDFA /* Sources */,
+				28605AC61B2EFDEC0046DDFA /* Frameworks */,
+				28605AC71B2EFDEC0046DDFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28605ACB1B2EFDEC0046DDFA /* PBXTargetDependency */,
+			);
+			name = EGORefreshTests;
+			productName = EGORefreshTests;
+			productReference = 28605AC91B2EFDEC0046DDFA /* EGORefreshTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28605AA81B2EFDEC0046DDFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Van;
+				TargetAttributes = {
+					28605AAF1B2EFDEC0046DDFA = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					28605AC81B2EFDEC0046DDFA = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 28605AAF1B2EFDEC0046DDFA;
+					};
+				};
+			};
+			buildConfigurationList = 28605AAB1B2EFDEC0046DDFA /* Build configuration list for PBXProject "EGORefresh" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28605AA71B2EFDEC0046DDFA;
+			productRefGroup = 28605AB11B2EFDEC0046DDFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28605AAF1B2EFDEC0046DDFA /* EGORefresh */,
+				28605AC81B2EFDEC0046DDFA /* EGORefreshTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28605AAE1B2EFDEC0046DDFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28605ABF1B2EFDEC0046DDFA /* Main.storyboard in Resources */,
+				28605AE81B2EFE020046DDFA /* blackArrow.png in Resources */,
+				28605AC41B2EFDEC0046DDFA /* LaunchScreen.xib in Resources */,
+				28605AEF1B2EFE020046DDFA /* whiteArrow@2x.png in Resources */,
+				28605AED1B2EFE020046DDFA /* grayArrow@2x.png in Resources */,
+				28605AEB1B2EFE020046DDFA /* blueArrow@2x.png in Resources */,
+				28605AEA1B2EFE020046DDFA /* blueArrow.png in Resources */,
+				28605AE91B2EFE020046DDFA /* blackArrow@2x.png in Resources */,
+				28605AEE1B2EFE020046DDFA /* whiteArrow.png in Resources */,
+				28605AEC1B2EFE020046DDFA /* grayArrow.png in Resources */,
+				28605AC11B2EFDEC0046DDFA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28605AC71B2EFDEC0046DDFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28605AAC1B2EFDEC0046DDFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28605AE71B2EFE020046DDFA /* EGORefreshTableHeaderView.m in Sources */,
+				28605ABC1B2EFDEC0046DDFA /* ViewController.m in Sources */,
+				28605AB91B2EFDEC0046DDFA /* AppDelegate.m in Sources */,
+				28605AB61B2EFDEC0046DDFA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28605AC51B2EFDEC0046DDFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28605AD01B2EFDEC0046DDFA /* EGORefreshTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28605ACB1B2EFDEC0046DDFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28605AAF1B2EFDEC0046DDFA /* EGORefresh */;
+			targetProxy = 28605ACA1B2EFDEC0046DDFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28605ABD1B2EFDEC0046DDFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28605ABE1B2EFDEC0046DDFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28605AC21B2EFDEC0046DDFA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28605AC31B2EFDEC0046DDFA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28605AD11B2EFDEC0046DDFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		28605AD21B2EFDEC0046DDFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28605AD41B2EFDEC0046DDFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EGORefresh/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		28605AD51B2EFDEC0046DDFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EGORefresh/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		28605AD71B2EFDEC0046DDFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EGORefreshTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EGORefresh.app/EGORefresh";
+			};
+			name = Debug;
+		};
+		28605AD81B2EFDEC0046DDFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EGORefreshTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EGORefresh.app/EGORefresh";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28605AAB1B2EFDEC0046DDFA /* Build configuration list for PBXProject "EGORefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28605AD11B2EFDEC0046DDFA /* Debug */,
+				28605AD21B2EFDEC0046DDFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28605AD31B2EFDEC0046DDFA /* Build configuration list for PBXNativeTarget "EGORefresh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28605AD41B2EFDEC0046DDFA /* Debug */,
+				28605AD51B2EFDEC0046DDFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		28605AD61B2EFDEC0046DDFA /* Build configuration list for PBXNativeTarget "EGORefreshTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28605AD71B2EFDEC0046DDFA /* Debug */,
+				28605AD81B2EFDEC0046DDFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28605AA81B2EFDEC0046DDFA /* Project object */;
+}

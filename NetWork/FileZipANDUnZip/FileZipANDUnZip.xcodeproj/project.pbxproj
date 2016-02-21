@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2853EE0F1B252022001FA5EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853EE0E1B252022001FA5EE /* main.m */; };
+		2853EE121B252022001FA5EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853EE111B252022001FA5EE /* AppDelegate.m */; };
+		2853EE151B252022001FA5EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853EE141B252022001FA5EE /* ViewController.m */; };
+		2853EE181B252022001FA5EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2853EE161B252022001FA5EE /* Main.storyboard */; };
+		2853EE1A1B252022001FA5EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2853EE191B252022001FA5EE /* Images.xcassets */; };
+		2853EE1D1B252022001FA5EE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2853EE1B1B252022001FA5EE /* LaunchScreen.xib */; };
+		2853EE291B252022001FA5EE /* FileZipANDUnZipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853EE281B252022001FA5EE /* FileZipANDUnZipTests.m */; };
+		2853EE3F1B25203A001FA5EE /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 2853EE351B25203A001FA5EE /* ioapi.c */; };
+		2853EE401B25203A001FA5EE /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 2853EE371B25203A001FA5EE /* mztools.c */; };
+		2853EE411B25203A001FA5EE /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 2853EE391B25203A001FA5EE /* unzip.c */; };
+		2853EE421B25203A001FA5EE /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 2853EE3B1B25203A001FA5EE /* zip.c */; };
+		2853EE431B25203A001FA5EE /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 2853EE3E1B25203A001FA5EE /* SSZipArchive.m */; };
+		2853EE451B252066001FA5EE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2853EE441B252066001FA5EE /* libz.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2853EE231B252022001FA5EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2853EE011B252022001FA5EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2853EE081B252022001FA5EE;
+			remoteInfo = FileZipANDUnZip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2853EE091B252022001FA5EE /* FileZipANDUnZip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileZipANDUnZip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2853EE0D1B252022001FA5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2853EE0E1B252022001FA5EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2853EE101B252022001FA5EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2853EE111B252022001FA5EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2853EE131B252022001FA5EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2853EE141B252022001FA5EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2853EE171B252022001FA5EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2853EE191B252022001FA5EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2853EE1C1B252022001FA5EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2853EE221B252022001FA5EE /* FileZipANDUnZipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileZipANDUnZipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2853EE271B252022001FA5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2853EE281B252022001FA5EE /* FileZipANDUnZipTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileZipANDUnZipTests.m; sourceTree = "<group>"; };
+		2853EE341B25203A001FA5EE /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		2853EE351B25203A001FA5EE /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		2853EE361B25203A001FA5EE /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		2853EE371B25203A001FA5EE /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		2853EE381B25203A001FA5EE /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		2853EE391B25203A001FA5EE /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		2853EE3A1B25203A001FA5EE /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		2853EE3B1B25203A001FA5EE /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		2853EE3C1B25203A001FA5EE /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		2853EE3D1B25203A001FA5EE /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		2853EE3E1B25203A001FA5EE /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		2853EE441B252066001FA5EE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2853EE061B252022001FA5EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2853EE451B252066001FA5EE /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2853EE1F1B252022001FA5EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2853EE001B252022001FA5EE = {
+			isa = PBXGroup;
+			children = (
+				2853EE441B252066001FA5EE /* libz.dylib */,
+				2853EE0B1B252022001FA5EE /* FileZipANDUnZip */,
+				2853EE251B252022001FA5EE /* FileZipANDUnZipTests */,
+				2853EE0A1B252022001FA5EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2853EE0A1B252022001FA5EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2853EE091B252022001FA5EE /* FileZipANDUnZip.app */,
+				2853EE221B252022001FA5EE /* FileZipANDUnZipTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2853EE0B1B252022001FA5EE /* FileZipANDUnZip */ = {
+			isa = PBXGroup;
+			children = (
+				2853EE321B25203A001FA5EE /* SSZipArchive */,
+				2853EE101B252022001FA5EE /* AppDelegate.h */,
+				2853EE111B252022001FA5EE /* AppDelegate.m */,
+				2853EE131B252022001FA5EE /* ViewController.h */,
+				2853EE141B252022001FA5EE /* ViewController.m */,
+				2853EE161B252022001FA5EE /* Main.storyboard */,
+				2853EE191B252022001FA5EE /* Images.xcassets */,
+				2853EE1B1B252022001FA5EE /* LaunchScreen.xib */,
+				2853EE0C1B252022001FA5EE /* Supporting Files */,
+			);
+			path = FileZipANDUnZip;
+			sourceTree = "<group>";
+		};
+		2853EE0C1B252022001FA5EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2853EE0D1B252022001FA5EE /* Info.plist */,
+				2853EE0E1B252022001FA5EE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2853EE251B252022001FA5EE /* FileZipANDUnZipTests */ = {
+			isa = PBXGroup;
+			children = (
+				2853EE281B252022001FA5EE /* FileZipANDUnZipTests.m */,
+				2853EE261B252022001FA5EE /* Supporting Files */,
+			);
+			path = FileZipANDUnZipTests;
+			sourceTree = "<group>";
+		};
+		2853EE261B252022001FA5EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2853EE271B252022001FA5EE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2853EE321B25203A001FA5EE /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				2853EE331B25203A001FA5EE /* minizip */,
+				2853EE3D1B25203A001FA5EE /* SSZipArchive.h */,
+				2853EE3E1B25203A001FA5EE /* SSZipArchive.m */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		2853EE331B25203A001FA5EE /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				2853EE341B25203A001FA5EE /* crypt.h */,
+				2853EE351B25203A001FA5EE /* ioapi.c */,
+				2853EE361B25203A001FA5EE /* ioapi.h */,
+				2853EE371B25203A001FA5EE /* mztools.c */,
+				2853EE381B25203A001FA5EE /* mztools.h */,
+				2853EE391B25203A001FA5EE /* unzip.c */,
+				2853EE3A1B25203A001FA5EE /* unzip.h */,
+				2853EE3B1B25203A001FA5EE /* zip.c */,
+				2853EE3C1B25203A001FA5EE /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2853EE081B252022001FA5EE /* FileZipANDUnZip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2853EE2C1B252022001FA5EE /* Build configuration list for PBXNativeTarget "FileZipANDUnZip" */;
+			buildPhases = (
+				2853EE051B252022001FA5EE /* Sources */,
+				2853EE061B252022001FA5EE /* Frameworks */,
+				2853EE071B252022001FA5EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FileZipANDUnZip;
+			productName = FileZipANDUnZip;
+			productReference = 2853EE091B252022001FA5EE /* FileZipANDUnZip.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2853EE211B252022001FA5EE /* FileZipANDUnZipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2853EE2F1B252022001FA5EE /* Build configuration list for PBXNativeTarget "FileZipANDUnZipTests" */;
+			buildPhases = (
+				2853EE1E1B252022001FA5EE /* Sources */,
+				2853EE1F1B252022001FA5EE /* Frameworks */,
+				2853EE201B252022001FA5EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2853EE241B252022001FA5EE /* PBXTargetDependency */,
+			);
+			name = FileZipANDUnZipTests;
+			productName = FileZipANDUnZipTests;
+			productReference = 2853EE221B252022001FA5EE /* FileZipANDUnZipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2853EE011B252022001FA5EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Van;
+				TargetAttributes = {
+					2853EE081B252022001FA5EE = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					2853EE211B252022001FA5EE = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 2853EE081B252022001FA5EE;
+					};
+				};
+			};
+			buildConfigurationList = 2853EE041B252022001FA5EE /* Build configuration list for PBXProject "FileZipANDUnZip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2853EE001B252022001FA5EE;
+			productRefGroup = 2853EE0A1B252022001FA5EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2853EE081B252022001FA5EE /* FileZipANDUnZip */,
+				2853EE211B252022001FA5EE /* FileZipANDUnZipTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2853EE071B252022001FA5EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2853EE181B252022001FA5EE /* Main.storyboard in Resources */,
+				2853EE1D1B252022001FA5EE /* LaunchScreen.xib in Resources */,
+				2853EE1A1B252022001FA5EE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2853EE201B252022001FA5EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2853EE051B252022001FA5EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2853EE411B25203A001FA5EE /* unzip.c in Sources */,
+				2853EE151B252022001FA5EE /* ViewController.m in Sources */,
+				2853EE121B252022001FA5EE /* AppDelegate.m in Sources */,
+				2853EE3F1B25203A001FA5EE /* ioapi.c in Sources */,
+				2853EE431B25203A001FA5EE /* SSZipArchive.m in Sources */,
+				2853EE421B25203A001FA5EE /* zip.c in Sources */,
+				2853EE0F1B252022001FA5EE /* main.m in Sources */,
+				2853EE401B25203A001FA5EE /* mztools.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2853EE1E1B252022001FA5EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2853EE291B252022001FA5EE /* FileZipANDUnZipTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2853EE241B252022001FA5EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2853EE081B252022001FA5EE /* FileZipANDUnZip */;
+			targetProxy = 2853EE231B252022001FA5EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2853EE161B252022001FA5EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2853EE171B252022001FA5EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2853EE1B1B252022001FA5EE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2853EE1C1B252022001FA5EE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2853EE2A1B252022001FA5EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2853EE2B1B252022001FA5EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2853EE2D1B252022001FA5EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FileZipANDUnZip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2853EE2E1B252022001FA5EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FileZipANDUnZip/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2853EE301B252022001FA5EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FileZipANDUnZipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileZipANDUnZip.app/FileZipANDUnZip";
+			};
+			name = Debug;
+		};
+		2853EE311B252022001FA5EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FileZipANDUnZipTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FileZipANDUnZip.app/FileZipANDUnZip";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2853EE041B252022001FA5EE /* Build configuration list for PBXProject "FileZipANDUnZip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2853EE2A1B252022001FA5EE /* Debug */,
+				2853EE2B1B252022001FA5EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2853EE2C1B252022001FA5EE /* Build configuration list for PBXNativeTarget "FileZipANDUnZip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2853EE2D1B252022001FA5EE /* Debug */,
+				2853EE2E1B252022001FA5EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2853EE2F1B252022001FA5EE /* Build configuration list for PBXNativeTarget "FileZipANDUnZipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2853EE301B252022001FA5EE /* Debug */,
+				2853EE311B252022001FA5EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2853EE011B252022001FA5EE /* Project object */;
+}

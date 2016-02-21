@@ -1,0 +1,327 @@
+
+
+
+
+1.循环滚动
+
+ 每次滚动后都将scrollview的offset设置为中间的一页
+
+ 若本次滚动是向前一页滚动，则把三页都向后放置，最后一页放到开头
+
+ 若本次滚动是向后一页滚动，则把三页都向前放置，第一页放到末尾
+
+初始化UISCrollView
+
+ 
+
+float x,y,width,height;
+
+x = WIDTH_OFF_SET;
+
+y = HEIGHT_OFF_SET;
+
+width = WIDTH_OFF_SET;
+
+height = SCROLLVIEW_HEIGHT;
+
+for (int j=0; j<3; j++) {
+
+UIView  *view = [[UIView alloc] initWithFrame:CGRectMake(x*(j), y, width, height)];
+
+[view setTag:10+j];//view的tag为10，11，12
+
+[view setBackgroundColor:[UIColor yellowColor]];
+
+for (int i=0; i<count; i++) {
+
+UIButton*pointNButton = [UIButton buttonWithType:UIButtonTypeCustom];
+
+[pointNButton setTitle:[NSString stringWithFormat:@"%d",100+i] forState:UIControlStateNormal];
+
+[pointNButton setBackgroundColor:[UIColor blueColor]];
+
+[pointNButton setTag:100+i];
+
+[pointNButton setFrame:CGRectMake(6.5+(13+65)*i, 8, 65, 65)];
+
+[pointNButton addTarget:self action:@selector(pointBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+
+[view addSubview:pointNButton];
+
+}
+
+[scrollView addSubview:view];
+
+[view release];
+
+ 
+
+}
+
+[scrollView setDelegate:self];
+
+[scrollView setPagingEnabled:NO];
+
+[scrollView setContentSize:CGSizeMake(WIDTH_OFF_SET*3, 80.0)];
+
+[scrollView setShowsHorizontalScrollIndicator:NO];
+
+#define WIDTH_OFF_SET630.0
+
+#define HEIGHT_OFF_SET0
+
+#define SCROLLVIEW_WIDTH390.0
+
+#define SCROLLVIEW_HEIGHT80.0
+
+ 
+
+ #define SET_FRAME(ARTICLEX) x = ARTICLEX.frame.origin.x + increase;\
+
+if(x < 0) x = pageWidth * 2;\
+
+if(x > pageWidth * 2) x = 0.0f;\
+
+[ARTICLEX setFrame:CGRectMake(x, \
+
+ARTICLEX.frame.origin.y,\
+
+ARTICLEX.frame.size.width,\
+
+ARTICLEX.frame.size.height)]
+
+ 
+
+#pragma mark -
+
+#pragma mark UIScrollViewDelegate
+
+//将三个view都向右移动，并更新三个指针的指向，article1永远指向当前显示的view，article0是左边的，article2是右边的
+
+- (void)allArticlesMoveRight:(CGFloat)pageWidth {
+
+ UIView *view0 = [scrollView viewWithTag:10];
+
+UIView *view1 = [scrollView viewWithTag:11];
+
+UIView *view2 = [scrollView viewWithTag:12];
+
+    UIView *tmpView = view2;
+
+    view2 = view1;
+
+    view1 = view0;
+
+    view0 = tmpView;
+
+ 
+
+    float increase = pageWidth;
+
+    CGFloat x = 0.0f;
+
+    SET_FRAME(view2);
+
+    SET_FRAME(view0);
+
+    SET_FRAME(view1);
+
+}
+
+- (void)allArticlesMoveLeft:(CGFloat)pageWidth {
+
+ 
+
+UIView *view0 = [scrollView viewWithTag:10];
+
+UIView *view1 = [scrollView viewWithTag:11];
+
+UIView *view2 = [scrollView viewWithTag:12];
+
+ 
+
+    UIView *tmpView = view0;
+
+    view0 = view1;
+
+    view1 = view2;
+
+    view2 = tmpView;
+
+    float increase = -pageWidth;
+
+    CGFloat x = 0.0f;
+
+    SET_FRAME(view1);
+
+    SET_FRAME(view2);
+
+    SET_FRAME(view0);
+
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)theScrollView
+
+{
+
+    CGFloat pageWidth = WIDTH_OFF_SET;
+
+    // 0 1 2
+
+    int page = floor((theScrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+
+    if(page == 1) {
+
+        //用户拖动了，但是滚动事件没有生效
+
+        return;
+
+    } else if (page == 0) {
+
+        [self allArticlesMoveRight:pageWidth];
+
+    } else {
+
+        [self allArticlesMoveLeft:pageWidth];
+
+    }
+
+    CGPoint p = CGPointZero;
+
+    p.x = pageWidth;
+
+    [theScrollView setContentOffset:p animated:NO];
+
+ 
+
+}
+
+ 
+
+ 
+
+/*
+
+ 循环滚动
+
+ 每次滚动后都将scrollview的offset设置为中间的一页
+
+ 若本次滚动是向前一页滚动，则把三页都向后放置，最后一页放到开头
+
+ 若本次滚动是向后一页滚动，则把三页都向前放置，第一页放到末尾
+
+ */
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)theScrollView
+
+{
+
+    CGFloat pageWidth = WIDTH_OFF_SET;
+
+    // 0 1 2
+
+    int page = floor((theScrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
+
+    if(page == 1) {
+
+        //用户拖动了，但是滚动事件没有生效
+
+        return;
+
+    } else if (page == 0) {
+
+        [self allArticlesMoveRight:pageWidth];
+
+    } else {
+
+        [self allArticlesMoveLeft:pageWidth];
+
+    }
+
+    CGPoint p = CGPointZero;
+
+    p.x = pageWidth;
+
+    [theScrollView setContentOffset:p animated:NO];
+
+ 
+
+}
+
+2.种方法思想是一样的，运用scrollRectToVisible
+
+ 
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)_scrollView
+
+{
+
+float currentPage =scrollView.contentOffset.x;
+
+NSLog(@"=======bao===scrollViewDidEndDragging==currentPage=%d",currentPage);
+
+if (currentPage >WIDTH_OFF_SET&&currentPage<WIDTH_OFF_SET*2) {
+
+[scrollView scrollRectToVisible:CGRectMake(0,0,SCROLLVIEW_WIDTH,SCROLLVIEW_HEIGHT) animated:NO];
+
+} else if (currentPage<0) {
+
+[scrollView scrollRectToVisible:CGRectMake(WIDTH_OFF_SET,0,SCROLLVIEW_WIDTH,SCROLLVIEW_HEIGHT) animated:NO];
+
+}
+
+ 
+
+}
+
+3。改变conentOffset
+
+ 
+
+#pragma mark UIScrollViewDelegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)_scrollView
+
+{
+
+int currentPage =(int)scrollView.contentOffset.x;
+
+if (currentPage >WIDTH_OFF_SET) {
+
+scrollView.contentOffset = CGPointMake(abs(currentPage-WIDTH_OFF_SET), HEIGHT_OFF_SET);
+
+} else if (currentPage<0) {
+
+scrollView.contentOffset = CGPointMake(currentPage+WIDTH_OFF_SET,HEIGHT_OFF_SET);
+
+}
+
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)_scrollView
+
+{
+
+ 
+
+int x= (int)scrollView.contentOffset.x/BUTTON_OFFSET*BUTTON_OFFSET;
+
+[scrollView setContentOffset:CGPointMake(x, HEIGHT_OFF_SET) animated:YES];
+
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)_scrollView willDecelerate:(BOOL)decelerate {
+
+if (!decelerate) {
+
+int x = (int)scrollView.contentOffset.y/BUTTON_OFFSET*BUTTON_OFFSET;
+
+[scrollView setContentOffset:CGPointMake(x, HEIGHT_OFF_SET) animated:YES];
+
+}
+
+}
+
+ 
+
+总之要想实现无缝链接就必须准备三屏你的数据，通过改变offset或是view的frame的的横纵坐标进而实现循环滚动
